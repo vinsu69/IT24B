@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+</head>
+<body>
+    <h1>todolist</h1>
+     <input type="text"
+     id="taskInput"
+     placeholder="add a task..."
+     />
+     <button onclick="andTask()">Add</button>
+     <ul id="tasklist">Tasks will appear here</ul>
+
+     <script>
+        function addTask(){
+            const input = document.getElementById("taskInput");
+            const value = input.value.trim();
+        if (Tasktext) {
+            addTaskItem(Tasktext);
+        } else {
+            console.log("No task entered, nothing to add."); 
+            return  value;
+        }
+function addTaskItem(Tasktext) {
+const li = document.createElement("li");
+li.textContent = Tasktext;
+
+document.getElementById("tasklist").appendChild(li);
+console.log("addtaskItem() called, =>" + Tasktext, Date());
+}
+    }
+     </script>
+</body>
+</html>
