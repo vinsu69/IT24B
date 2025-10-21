@@ -1,8 +1,19 @@
 [
     {
-        "name":"ICS Laboratory 1",
+        "name":"ICS laboratory 1",
+        "title":"ICS Lab 1",
+        "description":"This is the ICS Laboratory 1, yipee",
+        "img":"https://petpawspectives.wordpress.com/wp-content/uploads/2012/03/article-0-11df5ef9000005dc-485_964x8881.jpg",
         "lat":8.3593,
-        "lng":124.8691,
-        "description":"This is the ICS Laboratory 1, yipee"
+        "lng":124.8691
+    
+    },
+    {
+        "name":"Comfort Room 1",
+        "title":"CR nganiii, arayyy kooo",
+        "description":"",
+        "img":"https://i.pinimg.com/236x/90/91/e6/9091e6fbbb3e8133b4ab06f3cd0ae562.jpg",
+        "lat":8.359009695166359,
+        "lng":124.86911436078864
     }
 ]
