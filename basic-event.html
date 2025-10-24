@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campus Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+<style>
+    #map { 
+        height: 500px; 
+    }
+    .popup-image{
+        max-width: 200px;
+        height: auto;
+        object-fit: fill;
+    }
+</style>
+
 </head>
 <body>
-    <h1>Hello World</h1>
-
-    <h4>Username</h4>
-    <input type="text" id="textbox" placeholder="Enter your username" 
-           oninput="updateDisplay()">
-    <br>
-    <h4>Password</h4>
-    <input type="password" id="password" placeholder="Enter your password" 
-           oninput="recordPassword()">
-
-    <h1 id="displayText">Your text will appear here</h1>
-
-<script>
-
-    function updateDisplay(){
-        var textbox = document.getElementById('textbox');
-        var displayText = document.getElementById('displayText');
-
-        displayText.textContent = textbox.value;
-        console.log(textbox.value +" "+Date());
-    }
-
-    function recordPassword(){
-        var password = document.getElementById('password');
-        console.log(password.value +" "+Date());
-    }
-
-</script>
+    <h1>Campus Map</h1>
+    <div id="map"></div>
 </body>
+<script>
+function initMap(mapDataUrl){
+
+}
+document.addEventListener("DOMContentLoaded",()=>{
+    initMap('campus-map.json');
+});
+</script>
 </html>
